@@ -16,14 +16,39 @@ const services = [
 export default function ContactoPage() {
   const [sent, setSent] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setLoading(true);
-    // Simulate form submission
-    await new Promise((r) => setTimeout(r, 1500));
-    setLoading(false);
-    setSent(true);
+    setError("");
+
+    const form = e.currentTarget;
+    const data = new FormData(form);
+    const servicios = data.getAll("servicio") as string[];
+
+    const payload = {
+      nombre: data.get("nombre"),
+      email: data.get("email"),
+      empresa: data.get("empresa"),
+      servicios,
+      reto: data.get("reto"),
+    };
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      if (!res.ok) throw new Error("Error en el servidor");
+      setSent(true);
+    } catch {
+      setError("Ha ocurrido un error al enviar. Inténtalo de nuevo o escríbenos a hello@zaimetric.com");
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
@@ -141,6 +166,11 @@ export default function ContactoPage() {
                       placeholder="¿Qué problema quieres resolver? ¿Qué objetivo tienes? Cuanta más info, mejor propuesta podremos hacerte."
                     />
                   </div>
+                  {error && (
+                    <p className="text-sm text-red-600 bg-red-50 border border-red-200 rounded-xl px-4 py-3">
+                      {error}
+                    </p>
+                  )}
                   <button
                     type="submit"
                     disabled={loading}
