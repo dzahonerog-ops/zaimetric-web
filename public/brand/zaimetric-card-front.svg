@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 200" width="340" height="200">
+  <defs>
+    <linearGradient id="cardbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <pattern id="dots" patternUnits="userSpaceOnUse" width="20" height="20">
+      <circle cx="10" cy="10" r="0.6" fill="#1E293B" opacity="0.6"/>
+    </pattern>
+  </defs>
+  
+  <rect width="340" height="200" rx="8" fill="url(#cardbg)"/>
+  <rect width="340" height="200" rx="8" fill="url(#dots)"/>
+  
+  <!-- Logo bars -->
+  <rect x="30" y="120" width="10" height="20" rx="2" fill="#2563EB"/>
+  <rect x="44" y="100" width="10" height="40" rx="2" fill="#3B82F6"/>
+  <rect x="58" y="80" width="10" height="60" rx="2" fill="#60A5FA"/>
+  <rect x="72" y="60" width="10" height="80" rx="2" fill="#F97316"/>
+  
+  <!-- Brand name -->
+  <text x="100" y="110" font-family="'Space Grotesk', sans-serif" font-size="22" font-weight="700" letter-spacing="2" fill="#FFFFFF">ZAIMETRIC</text>
+  
+  <!-- Tagline -->
+  <text x="100" y="130" font-family="'Sora', sans-serif" font-size="9" fill="#64748B" letter-spacing="1.5">AI GROWTH SYSTEMS</text>
+  
+  <!-- Website -->
+  <text x="30" y="180" font-family="'Sora', sans-serif" font-size="9" fill="#94A3B8">zaimetric.com</text>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 80" width="480" height="80">
+  <defs>
+    <linearGradient id="bar1grad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#60A5FA"/>
+    </linearGradient>
+    <linearGradient id="bar2grad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="100%" stop-color="#93C5FD"/>
+    </linearGradient>
+    <linearGradient id="bar3grad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#93C5FD"/>
+      <stop offset="100%" stop-color="#BFDBFE"/>
+    </linearGradient>
+    <linearGradient id="bar4grad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#F97316"/>
+      <stop offset="100%" stop-color="#FDBA74"/>
+    </linearGradient>
+  </defs>
+  <!-- Metric bars icon -->
+  <rect x="12" y="52" width="10" height="16" rx="2" fill="url(#bar1grad)"/>
+  <rect x="26" y="38" width="10" height="30" rx="2" fill="url(#bar2grad)"/>
+  <rect x="40" y="24" width="10" height="44" rx="2" fill="url(#bar3grad)"/>
+  <rect x="54" y="12" width="10" height="56" rx="2" fill="url(#bar4grad)"/>
+  <!-- ZAIMETRIC text -->
+  <text x="82" y="54" font-family="'Space Grotesk', 'Sora', 'Inter', sans-serif" font-size="38" font-weight="700" letter-spacing="3" fill="#FFFFFF">ZAIMETRIC</text>
+</svg>
