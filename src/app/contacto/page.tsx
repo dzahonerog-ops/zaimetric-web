@@ -45,7 +45,7 @@ export default function ContactoPage() {
       if (!res.ok) throw new Error("Error en el servidor");
       setSent(true);
     } catch {
-      setError("Ha ocurrido un error al enviar. Inténtalo de nuevo o escríbenos a hello@zaimetric.com");
+      setError("Ha ocurrido un error al enviar. Inténtalo de nuevo o escríbenos a info@zaimetric.com");
     } finally {
       setLoading(false);
     }
@@ -246,11 +246,11 @@ export default function ContactoPage() {
               <div className="p-6 rounded-2xl border border-slate-200">
                 <h3 className="font-grotesk font-bold text-slate-900 mb-4">Contacto directo</h3>
                 <a
-                  href="mailto:hello@zaimetric.com"
+                  href="mailto:info@zaimetric.com"
                   className="flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium text-sm"
                 >
                   <Mail size={16} />
-                  hello@zaimetric.com
+                  info@zaimetric.com
                 </a>
               </div>
             </div>

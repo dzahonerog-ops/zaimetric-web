@@ -79,7 +79,7 @@ export default function RootLayout({
               description:
                 "AI Growth Systems Company. Construimos sistemas de crecimiento con IA y datos.",
               url: "https://zaimetric.com",
-              email: "hello@zaimetric.com",
+              email: "info@zaimetric.com",
               sameAs: [
                 "https://linkedin.com/company/zaimetric",
                 "https://twitter.com/zaimetric",

@@ -58,7 +58,7 @@ export function Footer() {
             </p>
             <div className="flex gap-3">
               <a
-                href="mailto:hello@zaimetric.com"
+                href="mailto:info@zaimetric.com"
                 className="p-2 rounded-lg bg-slate-800 hover:bg-blue-600 transition-colors text-slate-400 hover:text-white"
                 aria-label="Email"
               >
@@ -132,10 +132,10 @@ export function Footer() {
               <li className="flex items-center gap-2">
                 <Mail size={14} className="text-blue-400 shrink-0" />
                 <a
-                  href="mailto:hello@zaimetric.com"
+                  href="mailto:info@zaimetric.com"
                   className="hover:text-white transition-colors"
                 >
-                  hello@zaimetric.com
+                  info@zaimetric.com
                 </a>
               </li>
               <li className="flex items-center gap-2">

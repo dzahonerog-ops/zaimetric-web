@@ -20,11 +20,11 @@ export default function PrivacidadPage() {
             servicios, siempre que nos hayas dado tu consentimiento.
           </p>
           <h2 className="text-xl font-grotesk font-bold text-slate-900">Responsable del tratamiento</h2>
-          <p>ZAIMETRIC · hello@zaimetric.com</p>
+          <p>ZAIMETRIC · info@zaimetric.com</p>
           <h2 className="text-xl font-grotesk font-bold text-slate-900">Tus derechos</h2>
           <p>
             Puedes ejercer tus derechos de acceso, rectificación, supresión,
-            oposición y portabilidad enviando un email a hello@zaimetric.com.
+            oposición y portabilidad enviando un email a info@zaimetric.com.
           </p>
         </div>
       </div>

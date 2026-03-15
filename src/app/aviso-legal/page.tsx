@@ -19,7 +19,7 @@ export default function AvisoLegalPage() {
           <p>
             <strong>Nombre:</strong> ZAIMETRIC<br />
             <strong>Web:</strong> zaimetric.com<br />
-            <strong>Email:</strong> hello@zaimetric.com
+            <strong>Email:</strong> info@zaimetric.com
           </p>
           <h2 className="text-xl font-grotesk font-bold text-slate-900">Propiedad intelectual</h2>
           <p>
