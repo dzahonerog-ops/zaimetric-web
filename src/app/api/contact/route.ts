@@ -13,7 +13,7 @@ export async function POST(req: NextRequest) {
     }
 
     await resend.emails.send({
-      from: "ZAIMETRIC Web <onboarding@resend.dev>",
+      from: "ZAIMETRIC Web <noreply@zaimetric.com>",
       to: "info@zaimetric.com",
       replyTo: email,
       subject: `Nuevo contacto de ${nombre}${empresa ? ` (${empresa})` : ""}`,
