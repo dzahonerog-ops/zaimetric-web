@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { MapPin, ArrowRight, Star, Search, TrendingUp, Globe } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
@@ -15,7 +16,7 @@ const includes = [
   { icon: Star, title: "Gestión de reseñas y reputación", desc: "Estrategia de captación de reseñas positivas y gestión de las negativas. Las reseñas son el factor #1 en el posicionamiento local." },
   { icon: Search, title: "SEO on-page local", desc: "Optimización de tu web para keywords locales: barrio, ciudad, provincia. Landing pages locales si es necesario." },
   { icon: TrendingUp, title: "Seguimiento y reporting mensual", desc: "Informe mensual con rankings, posición en el mapa, visibilidad y leads generados desde Google." },
-  { icon: Globe, title: "Optimización GEO para motores de IA", desc: "El SEO local bien ejecutado es la base del GEO. Construimos la presencia que hace que las IAs (ChatGPT, Gemini, Perplexity) recomienden tu negocio cuando tus clientes preguntan." },
+  { icon: Globe, title: "Optimización GEO para motores de IA", desc: "El SEO local bien ejecutado es la base del GEO. Construimos la presencia que hace que las IAs (ChatGPT, Gemini, Perplexity) recomienden tu negocio cuando tus clientes preguntan.", link: "/servicios/geo" },
 ];
 
 const faqs = [
@@ -168,6 +169,11 @@ export default function SeoLocalPage() {
                 </div>
                 <h3 className="font-grotesk font-bold text-slate-900 text-lg mb-2">{i.title}</h3>
                 <p className="text-slate-500 text-sm leading-relaxed">{i.desc}</p>
+                {i.link && (
+                  <Link href={i.link} className="inline-flex items-center gap-1 text-blue-600 text-sm font-semibold mt-3 hover:gap-2 transition-all">
+                    Ver el servicio GEO completo <ArrowRight size={14} />
+                  </Link>
+                )}
               </div>
             ))}
           </div>

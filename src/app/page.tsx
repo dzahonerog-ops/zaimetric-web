@@ -356,9 +356,14 @@ export default function HomePage() {
               <p className="text-slate-600 text-base leading-relaxed mb-8 p-4 bg-blue-50 rounded-xl border border-blue-100">
                 Nuestros clientes no solo aparecen primero en Google. También aparecen cuando una IA recomienda empresas como la suya.
               </p>
-              <Button href="/contacto" variant="primary">
-                Solicita tu diagnóstico gratuito <ArrowRight size={16} />
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Button href="/servicios/geo" variant="primary">
+                  Ver servicio GEO <ArrowRight size={16} />
+                </Button>
+                <Button href="/contacto" variant="outline" className="border-blue-200 text-blue-600 hover:bg-blue-50">
+                  Solicita tu diagnóstico gratuito
+                </Button>
+              </div>
             </div>
             <div className="bg-slate-900 rounded-2xl p-8 text-white">
               <div className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-6">Ejemplo de consulta a una IA</div>

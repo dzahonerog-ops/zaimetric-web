@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Globe, Cpu, BarChart3, MapPin, ArrowRight, CheckCircle2 } from "lucide-react";
+import { Globe, Cpu, BarChart3, MapPin, Bot, ArrowRight, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 
@@ -12,6 +12,18 @@ export const metadata: Metadata = {
 };
 
 const services = [
+  {
+    icon: Bot,
+    title: "GEO — Posicionamiento en ChatGPT, Gemini y Perplexity",
+    slug: "geo",
+    tagline: "Aparece cuando las IAs recomiendan negocios como el tuyo",
+    description:
+      "Haz que ChatGPT, Gemini y Perplexity recomienden tu empresa. El GEO se construye sobre la base que ya ofrecemos: web sólida, SEO local y contenido de autoridad.",
+    features: ["Auditoría GEO de visibilidad actual", "Arquitectura de contenido citable", "Optimización de señales externas", "Seguimiento mensual en motores de IA"],
+    color: "border-blue-200 bg-blue-50",
+    iconBg: "bg-blue-600",
+    badge: "blue" as const,
+  },
   {
     icon: Globe,
     title: "Páginas web que generan clientes",

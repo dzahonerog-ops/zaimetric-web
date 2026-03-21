@@ -542,15 +542,37 @@ export default async function BlogPostPage({ params }: Props) {
 
           {/* CTA in article */}
           <div className="mt-12 p-8 rounded-2xl bg-blue-600 text-white">
-            <h3 className="font-grotesk font-bold text-xl mb-3">
-              ¿Quieres implementar automatización en tu empresa?
-            </h3>
-            <p className="text-blue-100 mb-5 text-sm">
-              Diagnóstico gratuito. Identificamos qué automatizaciones tienen mayor impacto para tu negocio.
-            </p>
-            <Button href="/contacto" variant="secondary">
-              Solicita tu diagnóstico gratuito <ArrowRight size={16} />
-            </Button>
+            {slug === "que-es-geo-generative-engine-optimization" ? (
+              <>
+                <h3 className="font-grotesk font-bold text-xl mb-3">
+                  ¿Aparece tu empresa cuando una IA recomienda negocios como el tuyo?
+                </h3>
+                <p className="text-blue-100 mb-5 text-sm">
+                  Auditoría GEO gratuita. Analizamos tu visibilidad actual en ChatGPT, Gemini y Perplexity
+                  y te decimos exactamente desde dónde partes.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <Button href="/servicios/geo" variant="secondary">
+                    Ver el servicio GEO <ArrowRight size={16} />
+                  </Button>
+                  <Button href="/contacto" className="bg-white/20 hover:bg-white/30 text-white border-0">
+                    Solicitar diagnóstico gratuito
+                  </Button>
+                </div>
+              </>
+            ) : (
+              <>
+                <h3 className="font-grotesk font-bold text-xl mb-3">
+                  ¿Quieres implementar automatización en tu empresa?
+                </h3>
+                <p className="text-blue-100 mb-5 text-sm">
+                  Diagnóstico gratuito. Identificamos qué automatizaciones tienen mayor impacto para tu negocio.
+                </p>
+                <Button href="/contacto" variant="secondary">
+                  Solicita tu diagnóstico gratuito <ArrowRight size={16} />
+                </Button>
+              </>
+            )}
           </div>
         </div>
       </article>
