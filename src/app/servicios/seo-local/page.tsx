@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 
 export const metadata: Metadata = {
-  title: "SEO local para empresas | Posicionamiento Google cerca de ti",
+  title: "SEO local y GEO para empresas | Aparece en Google y en las IAs",
   description:
-    "Posiciona tu empresa en los primeros resultados de Google en tu zona. SEO local, Google Business Profile, reseñas y estrategia geográfica. Consulta gratuita.",
+    "Posiciona tu empresa en Google Maps y en los motores de IA (ChatGPT, Gemini). SEO local, Google Business Profile, reseñas y GEO. Consulta gratuita.",
   alternates: { canonical: "https://zaimetric.com/servicios/seo-local" },
 };
 
@@ -15,6 +15,7 @@ const includes = [
   { icon: Star, title: "Gestión de reseñas y reputación", desc: "Estrategia de captación de reseñas positivas y gestión de las negativas. Las reseñas son el factor #1 en el posicionamiento local." },
   { icon: Search, title: "SEO on-page local", desc: "Optimización de tu web para keywords locales: barrio, ciudad, provincia. Landing pages locales si es necesario." },
   { icon: TrendingUp, title: "Seguimiento y reporting mensual", desc: "Informe mensual con rankings, posición en el mapa, visibilidad y leads generados desde Google." },
+  { icon: Globe, title: "Optimización GEO para motores de IA", desc: "El SEO local bien ejecutado es la base del GEO. Construimos la presencia que hace que las IAs (ChatGPT, Gemini, Perplexity) recomienden tu negocio cuando tus clientes preguntan." },
 ];
 
 const faqs = [
@@ -23,6 +24,7 @@ const faqs = [
   { q: "¿Cómo mejoramos las reseñas de Google?", a: "Implementamos un sistema de captación de reseñas: mensajes automáticos post-servicio, QR en el establecimiento, follow-up por email. También gestionamos las respuestas a todas las reseñas (positivas y negativas)." },
   { q: "¿Qué es el Google Business Profile?", a: "Es la ficha de tu negocio que aparece en Google Maps y en el panel lateral cuando alguien busca tu empresa o servicios similares en tu zona. Es el activo más importante para el SEO local." },
   { q: "¿Funcionáis con negocios de cualquier sector?", a: "Sí. Trabajamos con restaurantes, clínicas, tiendas, despachos profesionales, academias, talleres y cualquier negocio con presencia física o que atienda a clientes en una zona geográfica específica." },
+  { q: "¿Qué es el GEO y cómo se relaciona con el SEO local?", a: "GEO (Generative Engine Optimization) es el posicionamiento en motores de búsqueda con IA como ChatGPT, Gemini o Perplexity. El SEO local bien ejecutado — Google Business Profile optimizado, reseñas consistentes, contenido de autoridad — es exactamente la base que los LLMs usan para recomendar negocios. Por eso en ZAIMETRIC los trabajamos juntos: el resultado es visibilidad en Google y en las IAs al mismo tiempo." },
 ];
 
 export default function SeoLocalPage() {
@@ -62,11 +64,12 @@ export default function SeoLocalPage() {
           <div className="max-w-3xl">
             <Badge variant="orange" className="mb-4">SEO local</Badge>
             <h1 className="text-4xl sm:text-5xl font-grotesk font-bold text-white mb-6">
-              SEO local: aparece primero en Google cuando tus clientes te buscan cerca
+              SEO local y GEO: aparece en Google y en los motores de búsqueda con IA
             </h1>
             <p className="text-slate-300 text-xl leading-relaxed mb-10">
-              El 46% de las búsquedas en Google tienen intención local. Posiciona
-              tu empresa en el mapa 3-pack y consigue clientes de tu zona cada día.
+              El 46% de las búsquedas tienen intención local. Posiciona tu empresa en el
+              mapa 3-pack de Google y en los motores de IA que tus clientes ya usan para
+              buscar proveedores.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button href="/contacto" size="lg" variant="secondary">

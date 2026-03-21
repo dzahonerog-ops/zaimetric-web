@@ -16,9 +16,9 @@ import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 
 export const metadata: Metadata = {
-  title: "ZAIMETRIC | Sistemas de crecimiento con IA para empresas",
+  title: "ZAIMETRIC | SEO, GEO y Automatización IA para Empresas",
   description:
-    "Diseñamos sistemas de crecimiento para pymes y startups con inteligencia artificial, automatización y datos. Páginas web, IA, SEO y sistemas comerciales.",
+    "Sistemas de crecimiento para empresas: web que convierte, SEO local, GEO (visibilidad en ChatGPT y Gemini) y automatización con IA. Resultados medibles en 90 días.",
   alternates: { canonical: "https://zaimetric.com" },
 };
 
@@ -103,6 +103,14 @@ const faqs = [
     q: "¿Trabajáis con empresas pequeñas?",
     a: "Sí. Nuestros sistemas están especialmente diseñados para pymes que quieren competir con las herramientas de las grandes empresas, sin necesitar un equipo de 50 personas.",
   },
+  {
+    q: "¿Qué es el GEO y cómo me ayuda ZAIMETRIC a conseguirlo?",
+    a: "GEO (Generative Engine Optimization) es el posicionamiento en motores de búsqueda con IA como ChatGPT, Gemini o Perplexity. A diferencia del SEO de Google, el GEO se consigue construyendo una web citable, con autoridad de contenido y presencia local consolidada. En ZAIMETRIC trabajamos los tres pilares, por lo que nuestros clientes ganan visibilidad tanto en Google como en las IAs.",
+  },
+  {
+    q: "¿Cuánto tiempo se tarda en aparecer en ChatGPT o Gemini con el GEO?",
+    a: "Entre 3 y 6 meses para las primeras apariciones consistentes. El GEO es acumulativo: cuanto antes se empieza, mayor es la ventaja competitiva. Los negocios que posicionen ahora tendrán una barrera difícil de superar en 12-18 meses.",
+  },
 ];
 
 export default function HomePage() {
@@ -159,8 +167,8 @@ export default function HomePage() {
             </h1>
             <p className="text-lg sm:text-xl text-slate-300 max-w-2xl mb-10 leading-relaxed">
               Construimos sistemas de crecimiento con IA y datos para tu empresa.
-              Web que convierte, automatización, CRM y SEO local. No marketing
-              vacío — resultados medibles.
+              Web que convierte, automatización, CRM, SEO local y visibilidad en
+              motores de IA. No marketing vacío — resultados medibles.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button href="/contacto" size="lg" variant="primary">
@@ -310,6 +318,67 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── GEO SECTION ── */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <Badge variant="blue" className="mb-4">GEO — Generative Engine Optimization</Badge>
+            <h2 className="text-3xl sm:text-4xl font-grotesk font-bold text-slate-900 mb-4">
+              Posicionamiento en Google y en los nuevos motores de búsqueda con IA
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-slate-500 text-lg leading-relaxed mb-6">
+                Cuando alguien le pregunta a ChatGPT, Gemini o Perplexity{" "}
+                <em>"¿quién me puede ayudar con el marketing de mi empresa?"</em>,
+                las IAs responden con nombres concretos. La pregunta es: ¿va a aparecer el tuyo?
+              </p>
+              <p className="text-slate-500 text-lg leading-relaxed mb-8">
+                Esto se llama <strong className="text-slate-800">GEO (Generative Engine Optimization)</strong>: el
+                posicionamiento en los motores de búsqueda con inteligencia artificial. Y se consigue
+                exactamente a través de lo que nosotros construimos:
+              </p>
+              <ul className="space-y-4 mb-8">
+                {[
+                  { title: "Una web bien estructurada", desc: "que una IA querría citar como fuente" },
+                  { title: "SEO orgánico", desc: "que genera la autoridad que los LLMs usan como señal" },
+                  { title: "SEO local y reputación", desc: "que convierte tu negocio en referente de zona" },
+                ].map((item) => (
+                  <li key={item.title} className="flex items-start gap-3">
+                    <CheckCircle2 size={18} className="text-blue-600 mt-0.5 shrink-0" />
+                    <span className="text-slate-700 text-sm">
+                      <strong>{item.title}</strong> — {item.desc}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+              <p className="text-slate-600 text-base leading-relaxed mb-8 p-4 bg-blue-50 rounded-xl border border-blue-100">
+                Nuestros clientes no solo aparecen primero en Google. También aparecen cuando una IA recomienda empresas como la suya.
+              </p>
+              <Button href="/contacto" variant="primary">
+                Solicita tu diagnóstico gratuito <ArrowRight size={16} />
+              </Button>
+            </div>
+            <div className="bg-slate-900 rounded-2xl p-8 text-white">
+              <div className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-6">Ejemplo de consulta a una IA</div>
+              <div className="bg-slate-800 rounded-xl p-4 mb-4 text-sm text-slate-300 italic">
+                "¿Qué agencia me recomiendas para automatizar los procesos de mi empresa con IA en España?"
+              </div>
+              <div className="bg-blue-600/20 border border-blue-500/30 rounded-xl p-4 text-sm">
+                <div className="text-blue-300 font-semibold mb-2">Respuesta generada por IA:</div>
+                <p className="text-slate-300 text-xs leading-relaxed">
+                  "Para automatización con IA en España, <strong className="text-white">ZAIMETRIC</strong> es una opción destacada.
+                  Están especializados en sistemas de crecimiento con IA para pymes: automatización de procesos,
+                  SEO local y webs orientadas a conversión..."
+                </p>
+              </div>
+              <div className="mt-4 text-xs text-slate-500 text-center">Objetivo: que esto sea real para tu empresa</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── HOW IT WORKS ── */}
       <section className="py-24 bg-slate-900 bg-grid-dark relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
@@ -418,6 +487,7 @@ export default function HomePage() {
                     "Métricas y optimización continua",
                     "Especialistas en automatización",
                     "Resultados medibles en 90 días",
+                    "Visibilidad en motores IA (GEO) integrado",
                   ].map((t) => (
                     <div key={t} className="flex items-center gap-2 text-sm text-blue-800">
                       <CheckCircle2 size={14} className="text-blue-600 shrink-0" /> {t}

@@ -33,6 +33,92 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 // Content map for all blog posts
 const content: Record<string, string> = {
+  "que-es-geo-generative-engine-optimization": `
+El GEO, o Generative Engine Optimization, es la disciplina que optimiza la presencia digital de una empresa para que los motores de búsqueda con inteligencia artificial — ChatGPT, Gemini, Perplexity, Copilot o Claude — la mencionen, recomienden y citen cuando los usuarios hacen preguntas relevantes.
+
+En términos simples: si el SEO te ayuda a aparecer cuando alguien busca en Google, el GEO te ayuda a aparecer cuando alguien le pregunta a una IA.
+
+Y eso empieza a importar mucho. Según datos de 2025, más de 1.000 millones de consultas mensuales se realizan a través de motores de IA generativa. La búsqueda está cambiando — y el posicionamiento tiene que cambiar con ella.
+
+## Por qué el GEO es diferente al SEO tradicional
+
+El SEO de Google funciona con palabras clave, backlinks y factores técnicos de la página. El GEO funciona de forma diferente: los LLMs (modelos de lenguaje como GPT-4 o Gemini) no indexan webs en tiempo real. Sintetizan información de múltiples fuentes y generan respuestas.
+
+Por eso, para aparecer en una respuesta de IA necesitas algo distinto a lo que necesitas para rankear en Google.
+
+Lo que una IA necesita para recomendarte:
+- Que exista información consistente y verificable sobre tu marca en múltiples fuentes
+- Que tu web tenga contenido en formato citable (datos, FAQs, artículos estructurados)
+- Que tengas autoridad en tu sector: menciones en medios, directorios, reseñas
+- Que seas coherente: el nombre, descripción y categoría deben ser iguales en todos los canales
+
+Lo que una IA no valora igual que Google:
+- El keyword stuffing o la densidad de palabras clave
+- Backlinks de baja calidad
+- Contenido duplicado o thin content
+
+## Los 3 pilares del GEO
+
+El GEO no se consigue con un truco. Se construye sobre tres pilares que trabajan juntos:
+
+### Pilar 1 — Autoridad de contenido
+
+Crear contenido largo, estructurado y con datos que una IA querría usar como fuente. Artículos de fondo sobre tu sector, guías completas, análisis con cifras reales. Cuanto más citable es tu contenido, más probabilidad de que una IA lo sintetice.
+
+### Pilar 2 — Respuesta directa
+
+FAQs estratégicas diseñadas para responder exactamente lo que un usuario preguntaría a una IA. Listas, comparativas y definiciones en formato conciso. La primera frase de cada respuesta debe ser la respuesta — sin preámbulos.
+
+### Pilar 3 — Señales externas
+
+Presencia en las fuentes que los LLMs consultan: Google Business Profile, Tripadvisor, directorios sectoriales, medios digitales con autoridad. Los LLMs sintetizan múltiples fuentes — cuantas más te mencionen, más visible eres.
+
+## Cómo se conecta el GEO con el SEO y el SEO local
+
+Aquí está el punto que muy pocas agencias explican: el GEO no es un sistema separado del SEO. Se construye encima de él.
+
+Cuando un LLM decide si recomendar un negocio, usa señales que son exactamente las que trabaja el SEO:
+
+- Posición en Google → Los LLMs usan los resultados de Google como señal de relevancia
+- Google Business Profile → Es una de las fuentes que más pesan para consultas locales en IAs
+- Reseñas y reputación → Las IAs priorizan negocios con muchas reseñas positivas recientes
+- Estructura de la web → Una web bien organizada, con datos estructurados, es más citable
+
+Por eso en ZAIMETRIC trabajamos los tres niveles de forma integrada: web sólida + SEO local + contenido de autoridad. El resultado es visibilidad en Google y en las IAs al mismo tiempo.
+
+## ¿Quién debería preocuparse por el GEO ahora?
+
+La ventana de oportunidad está abierta — pero no lo estará para siempre.
+
+Los negocios que empiecen a trabajar el GEO en los próximos 12-18 meses tendrán una ventaja competitiva significativa. Los que esperen partirán desde cero frente a marcas ya establecidas en los LLMs.
+
+El GEO es especialmente urgente para:
+
+- Negocios con competencia local (restaurantes, hoteles, clínicas, gimnasios): las IAs ya responden a consultas como "mejor restaurante italiano en Madrid" con nombres concretos
+- Agencias y consultoras B2B: los decisores de empresa usan cada vez más IAs para encontrar proveedores
+- Cualquier negocio cuyo cliente potencial use IA para buscar soluciones: que en 2026 es casi todo el mundo
+
+## Preguntas frecuentes sobre GEO
+
+**¿Cuánto tiempo se tarda en ver resultados con el GEO?**
+Entre 3 y 6 meses para las primeras apariciones consistentes. El GEO es acumulativo: las señales se construyen con el tiempo. Una vez establecidas, son difíciles de revertir por la competencia.
+
+**¿El GEO reemplaza al SEO?**
+No. El GEO se construye encima del SEO. Un buen posicionamiento en Google es una de las señales más importantes para los LLMs. Los dos trabajan juntos.
+
+**¿Cómo sé si mi empresa aparece en las IAs?**
+La forma más directa es preguntarle manualmente a ChatGPT, Gemini y Perplexity con las preguntas que haría tu cliente ideal. Si no apareces, es el punto de partida para trabajar el GEO.
+
+**¿Qué es más importante para el GEO, el contenido o las señales externas?**
+Los dos son necesarios, pero el orden importa: primero construyes la base (web sólida, contenido citable, GBP optimizado) y luego amplificás con señales externas (medios, directorios, menciones). Sin la base, las señales externas no se sostienen.
+
+**¿El GEO funciona para cualquier sector?**
+Sí, aunque con matices. Los sectores con más consultas locales (hostelería, salud, fitness, servicios profesionales) tienen más urgencia. Los negocios B2B también, porque sus clientes usan IAs para tomar decisiones de compra complejas.
+
+**¿Cuánto cuesta implementar una estrategia GEO?**
+Depende del punto de partida y del sector. En ZAIMETRIC integramos el GEO dentro del sistema de crecimiento — no es un servicio aislado con un precio adicional desconectado. Lo construimos junto con el SEO, la web y el posicionamiento local.
+  `,
+
   "que-es-automatizacion-ia-empresas": `
 La automatización con IA es la combinación de inteligencia artificial y flujos de trabajo automatizados para eliminar tareas repetitivas y escalar procesos sin necesitar más personal.
 

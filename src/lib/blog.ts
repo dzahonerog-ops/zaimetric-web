@@ -11,6 +11,15 @@ export interface PostMeta {
 // Static blog posts for demo — in production, replace with MDX/CMS
 export const posts: PostMeta[] = [
   {
+    slug: "que-es-geo-generative-engine-optimization",
+    title: "Qué es el GEO (Generative Engine Optimization) y cómo posicionar tu empresa en ChatGPT, Gemini y Perplexity",
+    description: "GEO o Generative Engine Optimization es el posicionamiento en motores de IA. Aprende qué es, cómo funciona y qué necesita tu empresa para aparecer en ChatGPT y Gemini.",
+    date: "2026-03-21",
+    cluster: "GEO y posicionamiento en IAs",
+    keyword: "GEO Generative Engine Optimization",
+    readTime: "8 min",
+  },
+  {
     slug: "que-es-automatizacion-ia-empresas",
     title: "¿Qué es la automatización con IA para empresas?",
     description: "Guía completa sobre automatización empresarial con inteligencia artificial: qué es, cómo funciona y por qué tu empresa necesita implementarla.",

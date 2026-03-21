@@ -4,6 +4,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 
 const clusters = [
   "Todos",
+  "GEO y posicionamiento en IAs",
   "Automatización con IA",
   "Diseño web y conversión",
   "Sistemas comerciales y CRM",

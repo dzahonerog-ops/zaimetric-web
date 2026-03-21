@@ -5,9 +5,9 @@ import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 
 export const metadata: Metadata = {
-  title: "Servicios de IA, Automatización, SEO y Webs que convierten",
+  title: "Servicios de IA, SEO, GEO y Automatización | ZAIMETRIC",
   description:
-    "Descubre los servicios de ZAIMETRIC: páginas web de alto rendimiento, automatización con IA, sistemas comerciales y SEO local para hacer crecer tu empresa.",
+    "Web que convierte, SEO local, GEO para aparecer en ChatGPT y Gemini, automatización con IA y CRM. Sistemas integrados para pymes que quieren escalar.",
   alternates: { canonical: "https://zaimetric.com/servicios" },
 };
 
@@ -50,12 +50,12 @@ const services = [
   },
   {
     icon: MapPin,
-    title: "SEO local y posicionamiento Google",
+    title: "SEO local, Google Maps y visibilidad en IAs",
     slug: "seo-local",
-    tagline: "Aparece primero en tu zona",
+    tagline: "Aparece primero en tu zona y en las IAs",
     description:
-      "Google Business Profile, gestión de reseñas y estrategia geográfica. Posiciona tu empresa en el mapa 3-pack de Google cuando tus clientes te buscan.",
-    features: ["Google Business Profile optimizado", "Gestión de reseñas y reputación", "SEO on-page local", "Seguimiento mensual"],
+      "Google Business Profile, gestión de reseñas y estrategia geográfica. Posiciona tu empresa en el mapa 3-pack de Google y en los motores de búsqueda con IA cuando tus clientes te buscan.",
+    features: ["Google Business Profile optimizado", "Gestión de reseñas y reputación", "SEO on-page local", "Optimización para visibilidad en motores de IA (GEO)"],
     color: "border-orange-200 bg-orange-50",
     iconBg: "bg-orange-500",
     badge: "orange" as const,
@@ -69,7 +69,15 @@ export default function ServiciosPage() {
     name: "Servicios ZAIMETRIC",
     provider: { "@type": "Organization", name: "ZAIMETRIC" },
     description:
-      "Servicios de crecimiento basados en IA y datos: páginas web, automatización, sistemas comerciales y SEO local.",
+      "Sistemas de crecimiento con IA y datos: páginas web que convierten, SEO local, GEO (posicionamiento en motores de IA), automatización y sistemas comerciales.",
+    serviceType: [
+      "Diseño web orientado a conversión",
+      "SEO local y Google Business Profile",
+      "GEO - Generative Engine Optimization",
+      "Automatización con inteligencia artificial",
+      "Sistemas CRM y comerciales",
+    ],
+    areaServed: { "@type": "Country", name: "España" },
   };
 
   return (
@@ -93,8 +101,9 @@ export default function ServiciosPage() {
               Servicios de crecimiento basados en IA y datos
             </h1>
             <p className="text-slate-300 text-xl leading-relaxed">
-              No son servicios aislados. Son piezas de un sistema integrado que
-              trabajan juntas para hacer crecer tu empresa.
+              No son servicios aislados. Son piezas de un sistema integrado que trabajan juntas
+              para hacer crecer tu empresa — y para que aparezcas tanto en Google como en los
+              nuevos motores de búsqueda con IA.
             </p>
           </div>
         </div>
@@ -148,6 +157,36 @@ export default function ServiciosPage() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* GEO + SEO result */}
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="p-10 rounded-2xl bg-slate-900 text-center relative overflow-hidden">
+            <div className="absolute inset-0 bg-grid-dark" />
+            <div className="relative">
+              <Badge variant="dark" className="mb-4 inline-flex">
+                <span className="w-2 h-2 rounded-full bg-blue-400 inline-block" />
+                El sistema completo
+              </Badge>
+              <h2 className="text-3xl font-grotesk font-bold text-white mb-4">
+                SEO en Google + GEO en las IAs
+              </h2>
+              <p className="text-slate-400 text-lg mb-6 max-w-2xl mx-auto">
+                Los cuatro sistemas que construimos no trabajan solo para Google. Trabajan para que tu empresa sea
+                visible donde tus clientes te buscan hoy — y donde te buscarán mañana.
+              </p>
+              <p className="text-slate-300 text-base mb-8 max-w-2xl mx-auto">
+                Cuando una IA responde a <em>"¿qué empresa me recomiendas para X?"</em>, cita negocios que tienen
+                web sólida, autoridad en Google y presencia local consolidada. Eso es exactamente lo que construimos.
+              </p>
+              <Button href="/contacto" size="lg" variant="secondary">
+                ¿Cuál es el servicio adecuado para ti?
+                <ArrowRight size={18} />
+              </Button>
+            </div>
+          </div>
         </div>
       </section>
 
