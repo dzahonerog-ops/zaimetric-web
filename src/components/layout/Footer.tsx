@@ -6,6 +6,7 @@ const services = [
   { label: "Automatización con IA", href: "/servicios/automatizacion-ia" },
   { label: "Sistemas comerciales", href: "/servicios/sistemas-comerciales" },
   { label: "SEO local", href: "/servicios/seo-local" },
+  { label: "GEO — Posicionamiento en IAs", href: "/servicios/geo" },
 ];
 
 const company = [
